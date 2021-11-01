@@ -1,0 +1,14 @@
+[variable name] | [data type] | [size in bytes (using sizeof())]
+
+Variables stored in heap space:
+
+w					   int 			  4
+d						int 			  4
+veh1              Vehicle		  8
+veh2					Vehicle		  8
+veh3					Vehicle       8
+
+Variables stored in stack space:
+
+c					   string		  32
+pVehicle				Vehicle*      8
