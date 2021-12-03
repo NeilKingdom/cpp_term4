@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/neil/devel/school/2021_Fall/CPP_Term4/FinalAssign/CarRentalSystem/_deps/nana-subbuild/CMakeFiles/nana-populate"
+		},
+		{
+			"file" : "/home/neil/devel/school/2021_Fall/CPP_Term4/FinalAssign/CarRentalSystem/_deps/nana-subbuild/CMakeFiles/nana-populate.rule"
+		},
+		{
+			"file" : "/home/neil/devel/school/2021_Fall/CPP_Term4/FinalAssign/CarRentalSystem/_deps/nana-subbuild/CMakeFiles/nana-populate-complete.rule"
+		},
+		{
+			"file" : "/home/neil/devel/school/2021_Fall/CPP_Term4/FinalAssign/CarRentalSystem/_deps/nana-subbuild/nana-populate-prefix/src/nana-populate-stamp/nana-populate-build.rule"
+		},
+		{
+			"file" : "/home/neil/devel/school/2021_Fall/CPP_Term4/FinalAssign/CarRentalSystem/_deps/nana-subbuild/nana-populate-prefix/src/nana-populate-stamp/nana-populate-configure.rule"
+		},
+		{
+			"file" : "/home/neil/devel/school/2021_Fall/CPP_Term4/FinalAssign/CarRentalSystem/_deps/nana-subbuild/nana-populate-prefix/src/nana-populate-stamp/nana-populate-download.rule"
+		},
+		{
+			"file" : "/home/neil/devel/school/2021_Fall/CPP_Term4/FinalAssign/CarRentalSystem/_deps/nana-subbuild/nana-populate-prefix/src/nana-populate-stamp/nana-populate-install.rule"
+		},
+		{
+			"file" : "/home/neil/devel/school/2021_Fall/CPP_Term4/FinalAssign/CarRentalSystem/_deps/nana-subbuild/nana-populate-prefix/src/nana-populate-stamp/nana-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/neil/devel/school/2021_Fall/CPP_Term4/FinalAssign/CarRentalSystem/_deps/nana-subbuild/nana-populate-prefix/src/nana-populate-stamp/nana-populate-patch.rule"
+		},
+		{
+			"file" : "/home/neil/devel/school/2021_Fall/CPP_Term4/FinalAssign/CarRentalSystem/_deps/nana-subbuild/nana-populate-prefix/src/nana-populate-stamp/nana-populate-test.rule"
+		},
+		{
+			"file" : "/home/neil/devel/school/2021_Fall/CPP_Term4/FinalAssign/CarRentalSystem/_deps/nana-subbuild/nana-populate-prefix/src/nana-populate-stamp/nana-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"nana-populate"
+		],
+		"name" : "nana-populate"
+	}
+}

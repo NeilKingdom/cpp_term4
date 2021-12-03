@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1638213698 source:/home/neil/devel/school/2021_Fall/CPP_Term4/FinalAssign/CarRentalSystem/Main.cpp
+	<nana/gui.hpp>
+	<nana/gui/widgets/label.hpp>
+	<nana/gui/widgets/button.hpp>
+
+1638233889 source:/home/neil/devel/school/2021_Fall/CPP_Term4/FinalAssign/CarRentalSystem/Main.h
+

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/NanaTest.dir/Main.cpp.o -o NanaTest  _deps/nana-build/libnana.a /usr/lib/libSM.so /usr/lib/libICE.so /usr/lib/libX11.so /usr/lib/libXext.so /usr/lib/libXft.so /usr/lib/libfreetype.so /usr/lib/libfontconfig.so -static-libgcc -static-libstdc++ -pthread 
