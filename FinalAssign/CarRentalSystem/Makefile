@@ -262,6 +262,30 @@ ReturnGUI.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarRentalSystem.dir/build.make CMakeFiles/CarRentalSystem.dir/ReturnGUI.cpp.s
 .PHONY : ReturnGUI.cpp.s
 
+ReturnGroup.o: ReturnGroup.cpp.o
+.PHONY : ReturnGroup.o
+
+# target to build an object file
+ReturnGroup.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarRentalSystem.dir/build.make CMakeFiles/CarRentalSystem.dir/ReturnGroup.cpp.o
+.PHONY : ReturnGroup.cpp.o
+
+ReturnGroup.i: ReturnGroup.cpp.i
+.PHONY : ReturnGroup.i
+
+# target to preprocess a source file
+ReturnGroup.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarRentalSystem.dir/build.make CMakeFiles/CarRentalSystem.dir/ReturnGroup.cpp.i
+.PHONY : ReturnGroup.cpp.i
+
+ReturnGroup.s: ReturnGroup.cpp.s
+.PHONY : ReturnGroup.s
+
+# target to generate assembly for a file
+ReturnGroup.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarRentalSystem.dir/build.make CMakeFiles/CarRentalSystem.dir/ReturnGroup.cpp.s
+.PHONY : ReturnGroup.cpp.s
+
 Vehicle.o: Vehicle.cpp.o
 .PHONY : Vehicle.o
 
@@ -335,6 +359,9 @@ help:
 	@echo "... ReturnGUI.o"
 	@echo "... ReturnGUI.i"
 	@echo "... ReturnGUI.s"
+	@echo "... ReturnGroup.o"
+	@echo "... ReturnGroup.i"
+	@echo "... ReturnGroup.s"
 	@echo "... Vehicle.o"
 	@echo "... Vehicle.i"
 	@echo "... Vehicle.s"

@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CarRentalSystem.dir/RentalLocation.cpp.o.d"
   "CMakeFiles/CarRentalSystem.dir/ReturnGUI.cpp.o"
   "CMakeFiles/CarRentalSystem.dir/ReturnGUI.cpp.o.d"
+  "CMakeFiles/CarRentalSystem.dir/ReturnGroup.cpp.o"
+  "CMakeFiles/CarRentalSystem.dir/ReturnGroup.cpp.o.d"
   "CMakeFiles/CarRentalSystem.dir/Vehicle.cpp.o"
   "CMakeFiles/CarRentalSystem.dir/Vehicle.cpp.o.d"
   "CMakeFiles/CarRentalSystem.dir/ViewGUI.cpp.o"

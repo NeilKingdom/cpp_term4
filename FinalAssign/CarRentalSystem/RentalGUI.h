@@ -11,6 +11,11 @@
 #include <vector>
 #include <string>
 #include <iostream>
+
+#include "ViewGUI.h"
+#include "RentalGUI.h"
+#include "ReturnGUI.h"
+
 #include "Customer.h"
 #include "RentalLocation.h"
 #include "Vehicle.h"
@@ -24,21 +29,23 @@ private:
     button bAddCustomer{*this, "Add Customer"};
     button bAddRentalLocation{*this, "Add Rental Location"};
     button bAddVehicle{*this, "Add Vehicle"};
+    button bDelCustomer{*this, "Delete Customer"};
+    button bDelRentalLocation{*this, "Delete Rental Location"};
+    button bDelVehicle{*this, "Delete Vehicle"};
     button bFinalize{*this, "Finalize"};
-    combox* customersBox = new combox{*this, "Customers"};
-    combox* rentalLocationsBox = new combox{*this, "Rental Locations"};
-    combox* vehiclesBox = new combox{*this, "Vehicles"};
+    combox customersBox{*this, "Customers"};
+    combox rentalLocationsBox{*this, "Rental Locations"};
+    combox vehiclesBox{*this, "Vehicles"};
     label rentalStartLab{*this, "Rental Period Start: "};
     label rentalEndLab{*this, "Rental Period End: "};
     textbox rentalStartField{*this};
     textbox rentalEndField{*this};
 
-    Customer* lastCustSelected = NULL;
-    RentalLocation* lastRentalSelected = NULL;
-    Vehicle* lastVehicleSelected = NULL;
+    Customer* lastCustSelected = nullptr;
+    RentalLocation* lastRentalSelected = nullptr;
+    Vehicle* lastVehicleSelected = nullptr;
 
 public:
     RentalGUI(window rootWin);
-    //void initRentalComponents(std::vector<Customer*>& custList, std::vector<RentalLocation*>& rentalList, std::vector<Vehicle*>& vehicleList, ViewGUI view, RentalGUI rent);
-    void initRentalComponents(std::vector<Customer*>& custList, std::vector<RentalLocation*>& rentalList, std::vector<Vehicle*>& vehicleList);
+    void initRentalComponents(ViewGUI& view, RentalGUI& rent, ReturnGUI& retrn);
 };

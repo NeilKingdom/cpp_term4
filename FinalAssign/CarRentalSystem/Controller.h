@@ -18,18 +18,18 @@ class Controller : public form {
 
 private:
     place plc{*this};
+    label dayLab{*this, "<bold black size=14>Day: 0</>"};
     tabbar<std::string> tabBar{*this};
-    panel<false> daysPanel{*this};
     ViewGUI viewTabPage{*this};
     RentalGUI rentalTabPage{*this};
     ReturnGUI returnTabPage{*this};
 
-    //TODO: Could possibly be static + public?
-    std::vector<Customer*> custList;
-    std::vector<RentalLocation*> rentalList;
-    std::vector<Vehicle*> vehicleList;
-
 public:
+    static std::vector<Customer*> custList;
+    static std::vector<RentalLocation*> rentalList;
+    static std::vector<Vehicle*> vehicleList;
+    static int day;
+
     Controller();
     ~Controller();
 

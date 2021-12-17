@@ -39,11 +39,22 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="CMakeLists.txt" />
-		<Unit filename="Main.cpp" />
-		<Unit filename="Main.h">
-			<Option compile="1" />
-			<Option link="1" />
-		</Unit>
+		<Unit filename="Controller.cpp" />
+		<Unit filename="Controller.h" />
+		<Unit filename="Customer.cpp" />
+		<Unit filename="Customer.h" />
+		<Unit filename="RentalGUI.cpp" />
+		<Unit filename="RentalGUI.h" />
+		<Unit filename="RentalLocation.cpp" />
+		<Unit filename="RentalLocation.h" />
+		<Unit filename="ReturnGUI.cpp" />
+		<Unit filename="ReturnGUI.h" />
+		<Unit filename="ReturnGroup.cpp" />
+		<Unit filename="ReturnGroup.h" />
+		<Unit filename="Vehicle.cpp" />
+		<Unit filename="Vehicle.h" />
+		<Unit filename="ViewGUI.cpp" />
+		<Unit filename="ViewGUI.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

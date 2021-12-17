@@ -9,20 +9,20 @@ class RentalLocation {
 
 private:
     std::string m_address;
-    std::vector<Vehicle> m_vehicles;
+    std::vector<Vehicle*> m_vehicles;
 
 public:
     //Constructors/Destructors
     RentalLocation();
     RentalLocation(std::string address);
-    RentalLocation(std::string address, std::initializer_list<Vehicle> vehicles);
+    RentalLocation(std::string address, std::initializer_list<Vehicle*> vehicles);
     ~RentalLocation();
 
     //Member Functions
-    void addVehicle(const Vehicle vehicle);
-    void addVehicles(std::initializer_list<Vehicle> vehicles);
+    void addVehicle(Vehicle* vehicle);
+    void addVehicles(std::initializer_list<Vehicle*> vehicles);
 
     //Getters/Setters
     std::string getAddress() const;
-    std::vector<Vehicle> getVehicles() const;
+    std::vector<Vehicle*> getVehicles() const;
 };

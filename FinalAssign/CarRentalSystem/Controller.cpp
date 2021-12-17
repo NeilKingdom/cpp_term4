@@ -2,14 +2,19 @@
 
 using namespace nana;
 
+std::vector<Customer*> Controller::custList;
+std::vector<RentalLocation*> Controller::rentalList;
+std::vector<Vehicle*> Controller::vehicleList;
+int Controller::day = 0;
+
 Controller::Controller() {
 
-    plc.div("vert <weight=5% tabbar><weight=95% tabpage>");
+    dayLab.format(true);
+    plc.div("vert <weight=5% <weight=90% tabbar><weight=10% margin=[50,0,0,0] day>><weight=95% tabpage>");
 
     //Initialize action listeners
-    viewTabPage.initViewComponents();
-    //rentalTabPage.initRentalComponents(custList, rentalList, vehicleList, viewTabPage, rentalTabPage);
-    rentalTabPage.initRentalComponents(custList, rentalList, vehicleList);
+    viewTabPage.initViewComponents(returnTabPage, dayLab, day);
+    rentalTabPage.initRentalComponents(viewTabPage, rentalTabPage, returnTabPage);
     returnTabPage.initReturnComponents();
 
     this->events().unload([this](const arg_unload& e) {
@@ -18,9 +23,9 @@ Controller::Controller() {
         e.cancel = (mb() == mb.pick_no);
     });
 
-    //TODO: Add color to background
-    //daysPanel.bgcolor(API::);
-    plc.field("tabbar") << tabBar << daysPanel;
+    //Layout
+    plc.field("tabbar") << tabBar;
+    plc.field("day") << dayLab;
     plc.field("tabpage").fasten(viewTabPage).fasten(rentalTabPage).fasten(returnTabPage); //Fasten tab pages
 
     //Tabbar labels and corresponding layouts
@@ -45,12 +50,12 @@ void start() {
     exec();
 
     //Delete all allocated objects
-    //for(int i = 0; i < ViewGUI::customerGroups.size(); i++)
-        //delete ViewGUI::customerGroups[i];
-    //for(int i = 0; i < ViewGUI::rentalGroups.size(); i++)
-        //delete ViewGUI::rentalGroups[i];
-    //for(int i = 0; i < ViewGUI::vehicleGroups.size(); i++)
-        //delete ViewGUI::vehicleGroups[i];
+    for(int i = 0; i < Controller::custList.size(); i++)
+        delete Controller::custList[i];
+    for(int i = 0; i < Controller::rentalList.size(); i++)
+        delete Controller::rentalList[i];
+    for(int i = 0; i < Controller::vehicleList.size(); i++)
+        delete Controller::vehicleList[i];
 }
 
 int main() {

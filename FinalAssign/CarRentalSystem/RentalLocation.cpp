@@ -6,7 +6,7 @@ RentalLocation::RentalLocation() {}
 RentalLocation::RentalLocation(std::string address)
 : m_address(address) {}
 
-RentalLocation::RentalLocation(std::string address, std::initializer_list<Vehicle> vehicles)
+RentalLocation::RentalLocation(std::string address, std::initializer_list<Vehicle*> vehicles)
 : m_address(address) {
      for(auto veh : vehicles) {
         m_vehicles.push_back(veh);
@@ -16,12 +16,12 @@ RentalLocation::RentalLocation(std::string address, std::initializer_list<Vehicl
 RentalLocation::~RentalLocation() {}
 
 //Member functions
-void RentalLocation::addVehicle(const Vehicle vehicle) {
+void RentalLocation::addVehicle(Vehicle* vehicle) {
 
     m_vehicles.push_back(vehicle);
 }
 
-void RentalLocation::addVehicles(std::initializer_list<Vehicle> vehicles) {
+void RentalLocation::addVehicles(std::initializer_list<Vehicle*> vehicles) {
 
     for(auto veh : vehicles) {
         m_vehicles.push_back(veh);
@@ -30,4 +30,4 @@ void RentalLocation::addVehicles(std::initializer_list<Vehicle> vehicles) {
 
 //Getters/Setters
 std::string RentalLocation::getAddress() const { return m_address; }
-std::vector<Vehicle> RentalLocation::getVehicles() const { return m_vehicles; }
+std::vector<Vehicle*> RentalLocation::getVehicles() const { return m_vehicles; }
