@@ -1,3 +1,0 @@
-/home/neil/devel/IdeaProjects/Lab8_CPP/src/Week8/CMakeFiles/rebuild_cache.dir
-/home/neil/devel/IdeaProjects/Lab8_CPP/src/Week8/CMakeFiles/edit_cache.dir
-/home/neil/devel/IdeaProjects/Lab8_CPP/src/Week8/CMakeFiles/Week8_JNIDemo.so.dir
